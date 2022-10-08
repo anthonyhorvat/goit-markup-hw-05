@@ -105,7 +105,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-icon {
@@ -164,7 +164,7 @@ button {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -222,14 +222,19 @@ button {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   color: var(--main-page-color);
   background-color: #2196f3;
-  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  padding: 10px 32px;
+
   margin-left: auto;
   margin-right: auto;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--main-page-color);
@@ -350,7 +355,7 @@ button {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-icons-link:hover,
@@ -378,7 +383,9 @@ button {
   border: none;
   border-radius: 4px;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:first-child {
@@ -406,7 +413,7 @@ button {
 }
 .project-link {
   display: block;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-item img {
