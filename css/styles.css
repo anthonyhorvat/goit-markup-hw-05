@@ -277,6 +277,31 @@ button {
   padding-top: 0px;
 }
 
+.about-us-item {
+  position: relative;
+}
+
+.about-us-text {
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-page-color);
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-us-title {
   font-weight: 700;
   font-size: 36px;
@@ -458,7 +483,8 @@ button {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-link:hover .projects-overlay-text {
+.project-link:hover .projects-overlay-text,
+.project-link:focus .projects-overlay-text {
   transform: translateY(0);
 }
 
